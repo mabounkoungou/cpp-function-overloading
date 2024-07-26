@@ -1,17 +1,19 @@
 #include <iostream>
 using namespace std;
-
-int x;
-void Function1(){
-    x = 5;
-    cout << "Inside Function1: x = " << x << endl;
+int sum(int k){
+    if (k > 0){
+        return k + sum(k - 1);
+    }
+    else{
+        return 0;
+    }
 }
 int main(){
+    int n;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+    int result = sum(n);
+    cout << "The sum of numbers from 1 to " << n << "is: " << result << endl;
+    return 0;
     
-Function1();
-x = 2;
-cout << "Inside Main Function: x = "<< x << endl;
-
 }
-
-
