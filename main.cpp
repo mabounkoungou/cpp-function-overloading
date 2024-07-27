@@ -1,7 +1,24 @@
 #include <iostream>
 using namespace std;
 
+//Want to Create an Inside Method
+
+class Methods{
+    public:
+    void mymethod(){
+        cout << "Inside My Method" << endl;
+    }
+};
+
+// Want to Create an Object
+int main(){
+    
+    Methods Myobject;
+    Myobject.mymethod();
+}
+
 // Want to Create a Class
+/**
 class fruits
 {
     public:
@@ -25,7 +42,7 @@ int main()
     return 0;
 }
 
-/**
+
 int sum(int k){
     if (k > 0){
         return k + sum(k - 1);
