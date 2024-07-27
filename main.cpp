@@ -1,6 +1,23 @@
 #include <iostream>
 using namespace std;
 
+// Want to Create an Outside Method
+class myclass{
+    public:
+    void mymethod();
+};
+
+void myclass::mymethod(){
+    cout << "Outside My Method" << endl;
+};
+
+// Want to Create an Object
+int main(){
+    myclass Myobject;
+    Myobject.mymethod();
+}
+
+/**
 //Want to Create an Inside Method
 
 class Methods{
@@ -12,13 +29,13 @@ class Methods{
 
 // Want to Create an Object
 int main(){
-    
+
     Methods Myobject;
     Myobject.mymethod();
 }
 
 // Want to Create a Class
-/**
+
 class fruits
 {
     public:
